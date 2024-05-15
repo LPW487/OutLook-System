@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ABC Secondary School</title>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <script type="text/javascript" src="jslib/jquery-1.6.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#CNA").keyup(function () {
+                var name = ($(this).val());
+
+                if (name == "aa") {
+                    $("#icon").attr("src", "image/student.png");
+                } else if (name == "bb") {
+                    $("#icon").attr("src", "image/teacher.png");
+                } else if (name == "cc") {
+                    $("#icon").attr("src", "image/admin.png");
+                }
+            });
+
+            $("#btn_login").click(function () {
+                var name = $("#CNA").val();
+                switch (name) {
+                    case "aa":
+                        location.href = "StudentNotifications.html";
+
+                }
+
+
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <div class="first">
+
+
+    </div>
+
+    <div class="second">
+        <div class="imgcontainer">
+            <img src="image\admin.png" alt="Avatar" class="avatar" id="icon">
+        </div>
+        <div id="login_frame">
+            <form name="f1">
+                <p>
+                    <label class="label_input">CNA</label><input type="text" id="CNA" name="CNA" class="text_input" />
+                </p>
+                <p>
+                    <label class="label_input">Password</label><input type="text" id="password" name="password"
+                        class="text_input" />
+                </p>
+                <div id="login_control">
+                    <input type="button" id="btn_login" value="Login" />
+
+                </div>
+            </form>
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+    </div>
+
+</body>
+
+</html>

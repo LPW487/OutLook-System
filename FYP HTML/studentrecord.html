@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Student Record Page</title>
+    <link rel="stylesheet" type="text/css" href="studentrecord.css" />
+    <script type="text/javascript" src="jslib/jquery-1.6.js"></script>
+    <!-- boxicons css -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css' rel='stylesheett'>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="image/student.png" alt="logo" />
+
+                </span>
+
+
+                <div class="text header-text">
+                    <span class="name">Student</span>
+                    <span class="profession"></span>
+                </div>
+
+            </div>
+
+            <i class='bx bx-chevrons-right toggle'></i>
+        </header>
+
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+
+                    <i class='bx bx-search-alt icon'></i>
+                    <input type="text" placeholder="Search....">
+
+                </li>
+
+
+
+                <ul class="menu-link">
+                    <li class="nav-link">
+                        <a href="StudentNotifications.html">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="studentrecord.html">
+                            <i class='bx bxs-note icon'></i>
+                            <span class="text nav-text">Detection Record</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="studentuploadimage.html">
+                            <i class='bx bxs-cloud-upload icon'></i>
+                            <span class="text nav-text">Upload Image</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <div class="bottom-content">
+
+                <li class="">
+                    <a href="#">
+                        <i class='bx bxs-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bxs-moon icon moon'></i>
+                        <i class='bx bxs-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+
+                    <div class="toggle-switch">
+
+                        <span class="switch">
+
+                        </span>
+                    </div>
+                </li>
+            </div>
+
+        </div>
+    </nav>
+    <section class="home ">
+        <div class="text">Detection Record
+            <i class='bx bxs-user loginame' id="loginame"> Chin Tai Man</i>
+        </div>
+
+        <div class="table">
+            <div class="table_header">
+
+                <div>
+                    <input placeholder=" Key Words: ">
+                    <button class="Search">Search</button>
+                </div>
+            </div>
+
+            <div class="table_section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Date</th>
+                            <th>Review</th>
+                            <th>Hair</th>
+                            <th>Cloth</th>
+                            <th>Late</th>
+                            <th>document</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2022/10/1</td>
+                            <td>Yes</td>
+                            <td>V</td>
+                            <td>X</td>
+                            <td>#</td>
+                            <td>#</td>
+                            <td>
+                                <button><i class='bx bx-upload'></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>2022/10/2</td>
+                            <td>Yes</td>
+                            <td>V</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>#</td>
+                            <td>
+                                <button><i class='bx bx-upload'></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>2022/10/3</td>
+                            <td>Yes</td>
+                            <td>X</td>
+                            <td>Y</td>
+                            <td>#</td>
+                            <td>#</td>
+                            <td>
+                                <button><i class='bx bx-upload'></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>2022/10/4</td>
+                            <td>Yes</td>
+                            <td>V</td>
+                            <td>#</td>
+                            <td>#</td>
+                            <td>X</td>
+                            <td>
+                                <button><i class='bx bx-upload'></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>2022/10/4</td>
+                            <td>Yes</td>
+                            <td>V</td>
+                            <td>#</td>
+                            <td>#</td>
+                            <td>#</td>
+                            <td>
+                                <button><i class='bx bx-upload'></i></button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>2022/10/4</td>
+                            <td>Yes</td>
+                            <td>V</td>
+                            <td>#</td>
+                            <td>#</td>
+                            <td>#</td>
+                            <td>
+                                <button><i class='bx bx-upload'></i></button>
+                            </td>
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <div><i class='bx bxs-chevrons-left'></i></div>
+                <div><i class='bx bxs-left-arrow-alt'></i></div>
+
+                <div><i class='bx bxs-right-arrow-alt'></i></div>
+                <div><i class='bx bxs-chevrons-right'></i></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
